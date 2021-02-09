@@ -1,0 +1,46 @@
+
+tsdisplay(arima(dowjones,order=c(0,0,0))$residuals)
+tsdisplay(arima(dowjones, order=c(0,1,0))$residuals)
+tsdisplay(arima(dowjones, order=c(0,2,0))$residuals)
+
+tsdisplay(arima(dowjones, order=c(0,2,1))$residuals)
+auto.arima(dowjones)
+
+auto.arima(cpimel)
+tsdisplay(arima(cpimel, order=c(0,0,0))$residuals)
+arima(cpimel, order=c(0,0,0))
+tsdisplay(arima(cpimel, order=c(0,2,0))$residuals)
+arima(cpimel, order=c(0,2,0))
+tsdisplay(arima(cpimel, order=c(0,2,1))$residuals)
+arima(cpimel, order=c(0,2,1))
+
+tsdisplay(arima(eggs, order=c(3,2,1))$residuals)
+arima(cpimel, order=c(3,2,1))
+auto.arima(eggs)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

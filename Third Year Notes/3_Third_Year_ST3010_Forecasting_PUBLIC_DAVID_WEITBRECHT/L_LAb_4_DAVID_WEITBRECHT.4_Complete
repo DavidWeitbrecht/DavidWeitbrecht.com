@@ -1,0 +1,20 @@
+tsdisplay(arima.sim(n=100000, list(ar=c(0.8897)), sd=sqrt(0.1796)))
+
+tsdisplay(arima.sim(n=100000,list(ar=c(0.8897,-0.4858)), sd=sqrt(0.1796)))
+
+tsdisplay(arima.sim(n=1000, list(ma=c(-0.2279)), sd =sqrt(0.1796)))
+tsdisplay(arima.sim(n=1000, list(ma=c(-0.2279,0.2488)), sd =sqrt(0.1796)))
+ arima.sim(n=100, list(ar=c(0.8897,-0.4858),ma=c(-0.2279,0.2488)),sd=sqrt(0.1796))
+
+
+
+
+
+
+
+
+
+
+
+
+

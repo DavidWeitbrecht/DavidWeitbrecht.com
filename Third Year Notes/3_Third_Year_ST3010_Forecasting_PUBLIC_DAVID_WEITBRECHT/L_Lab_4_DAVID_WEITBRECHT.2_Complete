@@ -1,0 +1,17 @@
+require(fma)
+arima(dowjones,order=c(0,0,0))$coef
+?arima
+a=arima(dowjones,order=c(1,0,0))
+summary(a)
+plot(forecast(arima(dowjones,order=c(1,0,0)),h=1000 ))
+plot(forecast(arima(dowjones,order=c(2,0,0)),h=1000 ))
+
+mytimeseries = arima.sim(list(order=c(1,0,0),ar=0.5),n=200)
+mytimeseries
+tsdisplay(mytimeseries)
+arima(mytimeseries,order=c(1,0,0))
+mytimeseries1 = arima.sim(list(order=c(1,0,0),ar=0.5),n=2000)
+arima(mytimeseries1,order=c(1,0,0))
+
+mytimeseries2 = arima.sim(list(order=c(1,0,0),ar=0.5),n=200000)
+arima(mytimeseries2,order=c(1,0,0))
